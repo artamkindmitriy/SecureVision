@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SecureVision - Каталог</title>
+    <link rel="icon" href="img/logo-footer.png" type="image/png">
+    <link rel="stylesheet" href="css/style-catalog.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" width="75px" height="75px" alt="logo">
+            <div class="text-logo">
+                <h2>SecureVision</h2>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html #contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="phone">
+          <button id="copyButton" class="call-button" data-phone-number="+996(555)348-999">
+              Позвонить
+          </button>
+          <div id="copyMessage" class="copy-message hidden">Номер скопирован</div>
+      </div>
+    </header>
+    <main>
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs-list" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a class="breadcrumbs-link" itemprop="item" href="index.html">
+                  <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a class="breadcrumbs-link" itemprop="item" href="catalog.html">
+                  <span itemprop="name">Каталог</span>
+                </a>
+                <meta itemprop="position" content="2">
+              </li>
+               <li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a class="breadcrumbs-link active" itemprop="item">
+                  <span itemprop="name">Модели камер</span>
+                </a>
+                <meta itemprop="position" content="3">
+              </li>
+            </ul>
+          </div>
+
+          <div class="catalog-block">
+            <h2 class="catalog-title">Каталог</h2>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="img/camera-first.png" width="250px" height="250px" alt="Товар 1">
+                    <h3>Reolink RLC-410W</h3>
+                    <p>Тип: IP-камера</p>
+                    <p>Разрешение: 4MP (2560x1440)</p>
+                    <p>Особенности: Ночное видение, Wi-Fi, встроенный микрофон, работа на улице и внутри помещений, угол обзора 80°.</p>
+                    <p class="product-price">Цена: $70</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/camera-second.png" alt="Товар 2">
+                    <h3>Xiaomi Mi Home Security Camera 360°</h3>
+                    <p>Тип: IP-камера</p>
+                    <p>Разрешение: 1080p (Full HD)</p>
+                    <p>Особенности: 360° обзор, ночное видение, поддержка голосового управления через Google Assistant и Alexa, мониторинг через приложение Mi Home.</p>
+                    <p class="product-price">Цена: $40</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/camera-third.png" alt="Товар 3">
+                    <h3>Nest Cam Outdoor</h3>
+                    <p>Тип: IP-камера</p>
+                    <p>Разрешение: 1080p (Full HD)</p>
+                    <p>Особенности: Защита от непогоды, двухсторонняя связь, уведомления о движении, интеграция с Google Home.</p>
+                    <p class="product-price">Цена: $180</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/camera-fourth.png" alt="Товар 4">
+                    <h3>Hikvision DS-2CD2085FWD-I</h3>
+                    <p>Тип: IP-камера</p>
+                    <p>Разрешение: 8MP (4K)</p>
+                    <p>Особенности: Ночное видение до 30 м, поддержка PoE, интеграция с NVR-системами, влагозащищенная.</p>
+                    <p class="product-price">Цена: $250</p>
+                </div>
+                <div class="product-card">
+                    <img src="img/camera-fifth.png" alt="Товар 4">
+                    <h3>D-Link DCS-8600LH</h3>
+                    <p>Тип: IP-камера</p>
+                    <p>Разрешение: 1080p (Full HD)</p>
+                    <p>Особенности: 180° угол обзора, поддержка Wi-Fi, датчик движения, двухсторонняя аудио-связь.</p>
+                    <p class="product-price">Цена: $90</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+          <div class="contact-form-container">
+          <form class="contact-form" action="/process_form" method="post">
+            <div class="form-group">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="comment">Комментарий:</label>
+              <textarea id="comment" name="comment"></textarea>
+            </div>
+            <div class="form-group">
+            <button type="submit">Отправить</button>
+        </div>
+          </form>
+        </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo-footer.png" alt="Логотип компании" width="75px" height="75px">
+            </div>
+            <div class="footer-copyright">
+              &copy; 2025 SecureVision. Все права защищены.
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="index.html #contacts">Контакты</a></li>
+                </ul>
+            </nav>
+          </div>
+       </footer>
+    <script src="scripts/script-catalog.js"></script>
+</body>
+</html>
