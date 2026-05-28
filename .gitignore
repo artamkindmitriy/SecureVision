@@ -1,0 +1,7 @@
+# Настройки IDE (PyCharm, WebStorm, VS Code)
+.idea/
+.vscode/
+
+# Системные файлы Mac и Windows
+.DS_Store
+Thumbs.db
